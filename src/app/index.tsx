@@ -6,6 +6,9 @@ import { ScrollView, Text, View } from 'react-native';
 // First parent element => Respects phone safe areas = the screen boundary => so that elements don't overlap each other
 import { SafeAreaView } from 'react-native-safe-area-context';
 
+
+import TheHeader from "../components/TheHeader";
+
 export default function HomeScreen() {
   return (
 
@@ -15,10 +18,8 @@ export default function HomeScreen() {
 {/* flex-1 = Take all available space in the parent container*/}
   <ScrollView showsVerticalScrollIndicator={false} className='flex-1'>
 
-    <View className='flex-row justify-end px-5'>
-      <Text className='text-3xl'>
-         ☰
-      </Text>
+    <View>
+      <TheHeader/>
     </View>
 
     {/* Main Heading */}
